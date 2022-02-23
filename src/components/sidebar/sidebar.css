@@ -1,9 +1,11 @@
 .sidebar {
     flex: 3;
-    height: calc(100vh -50px);
+    height: calc(100vh - 50px);
     overflow-y: scroll;
     /*  chỉ định cắt nội dung, thêm thanh cuộn hoặc hiển thị nội dung
     tràn của phần tử cấp khối khi nó tràn ở các cạnh trên cùng và dưới cùng. */
+    position: sticky;
+    top: 50px;
 }
 
 .sidebar::-webkit-scrollbar {
@@ -15,7 +17,7 @@
 }
 
 .sidebar::-webkit-scrollbar-thumb {
-    background-color: black
+    background-color: rgb(179, 179, 179)
 }
 
 .sidebarWrapper {
@@ -54,18 +56,4 @@
     padding: 0;
     margin: 0;
     list-style: none;
-}
-
-.sidebarFriend {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.sidebarFriendImg {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 10px;
 }

@@ -7,6 +7,7 @@
     position: sticky;
     /* sticky là vị trí ko bị ảnh hưởng bởi scrollview */
     top: 0;
+    z-index: 999;
 }
 
 .topbarLeft {
